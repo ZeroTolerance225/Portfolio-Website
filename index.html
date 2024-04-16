@@ -80,36 +80,46 @@
 
 <!-- Service Section -->
 <section class="service_section layout_padding" style="padding-top: 50px;">
-  <style>
-    /* Base styles for all devices */
-    .img-box {
-      display: flex;
-      justify-content: center; /* Center horizontally */
-      align-items: center; /* Center vertically */
-      height: 100%; /* Set height to use all available space in the container */
-    }
+<style>
+  /* Ensure this meta tag is included in the <head> section */
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    /* Ensure images within img-box are not too large and maintain their aspect ratio */
-    .img-box img {
+  /* Base styles for image container */
+  .img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center the text as well */
+    height: 200px; /* Adjust height as necessary for your design */
+  }
+
+  /* Style for the images to ensure they are centered and responsive */
+  .img-box img {
+    max-width: 100%; 
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  /* Adjustments for the text content to ensure it is centered */
+  .detail-box {
+    text-align: center;
+  }
+
+  /* Responsive adjustments for mobile screens */
+  @media (max-width: 768px) {
+    .service_section .col-md-4 {
+      flex: 0 0 100%;
       max-width: 100%;
-      max-height: 100%; /* Limit image height to prevent overflow */
-      height: auto; /* Maintain aspect ratio */
-      object-fit: contain; /* Ensure the image is contained within the bounding box without distortion */
+      margin-bottom: 20px; /* Add some space between the boxes */
     }
+  }
+</style>
 
-    /* Responsive adjustments for mobile screens */
-    @media (max-width: 768px) {
-      .service_section .col-md-4 {
-        flex: 0 0 100%; /* Each column takes full width on small screens */
-        max-width: 100%;
-      }
-    }
-  </style>
   <div class="service_container">
     <div class="container">
       <div class="heading_container heading_center">
         <h2 style="color: white;">
-         <span> Our stuff Services</span>
+         <span> Our Services</span>
         </h2>
         <p>
           
