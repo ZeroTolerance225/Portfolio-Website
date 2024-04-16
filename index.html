@@ -80,6 +80,28 @@
 
 <!-- Service Section -->
 <section class="service_section layout_padding" style="padding-top: 50px;">
+  <style>
+    /* Base styles for all devices */
+    .img-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Ensure images within img-box are not too large */
+    .img-box img {
+      max-width: 100%; /* ensures image is not larger than its container */
+      height: auto;  /* maintains aspect ratio */
+    }
+
+    /* Responsive adjustments for mobile screens */
+    @media (max-width: 768px) {
+      .service_section .col-md-4 {
+        flex: 0 0 100%; /* Each column takes full width on small screens */
+        max-width: 100%;
+      }
+    }
+  </style>
   <div class="service_container">
     <div class="container">
       <div class="heading_container heading_center">
@@ -137,7 +159,8 @@
                 Machine Learning
               </h5>
               <p>
-                Utilizing  machine learning algorithms, our plate scanning service provides quick and accurate vehicle identification..
+                Utilizing machine learning algorithms, our plate scanning service provides quick and accurate vehicle identification.
+              </p>
               <a href="">
            
               </a>
@@ -145,12 +168,10 @@
           </div>
         </div>
       </div>
-    
     </div>
   </div>
 </section>
 <!-- End Service Section -->
-
 
 
 <!-- about section -->
