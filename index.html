@@ -81,45 +81,46 @@
 <!-- Service Section -->
 <section class="service_section layout_padding" style="padding-top: 50px;">
 <style>
-  /* Ensure this meta tag is included in the <head> section */
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  /* Base styles for image container */
   .img-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center; /* Center the text as well */
-    height: 200px; /* Adjust height as necessary for your design */
+    text-align: center; /* Center the text inside the box */
+    height: 200px; /* Fixed height for the container, adjust as needed */
   }
 
-  /* Style for the images to ensure they are centered and responsive */
   .img-box img {
-    max-width: 100%; 
-    max-height: 100%;
-    object-fit: contain;
+    width: auto; /* Auto width to maintain aspect ratio */
+    max-width: 100%; /* Ensures the image is never wider than the container */
+    max-height: 100%; /* Ensures the image is never taller than the container */
+    height: auto; /* Height is auto to maintain aspect ratio */
   }
 
-  /* Adjustments for the text content to ensure it is centered */
   .detail-box {
     text-align: center;
   }
 
-  /* Responsive adjustments for mobile screens */
-  @media (max-width: 768px) {
-    .service_section .col-md-4 {
-      flex: 0 0 100%;
+  /* This media query will cover all devices narrower than 480 pixels */
+  @media (max-width: 480px) {
+    .service_section .col-md-4, .service_section .col-sm-6, .service_section .col-xs-12 {
+      flex: 0 0 100%; /* Each box takes full width on very small screens */
       max-width: 100%;
-      margin-bottom: 20px; /* Add some space between the boxes */
+      margin-bottom: 20px; /* Space between boxes */
+    }
+
+    /* You might want to adjust the box height as well on very small screens */
+    .img-box {
+      height: auto; /* or a smaller fixed height */
     }
   }
 </style>
+
 
   <div class="service_container">
     <div class="container">
       <div class="heading_container heading_center">
         <h2 style="color: white;">
-         <span> Our Services</span>
+         <span> Our stuff Services</span>
         </h2>
         <p>
           
