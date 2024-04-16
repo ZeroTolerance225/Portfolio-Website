@@ -84,14 +84,17 @@
     /* Base styles for all devices */
     .img-box {
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      height: 100%; /* Set height to use all available space in the container */
     }
 
-    /* Ensure images within img-box are not too large */
+    /* Ensure images within img-box are not too large and maintain their aspect ratio */
     .img-box img {
-      max-width: 100%; /* ensures image is not larger than its container */
-      height: auto;  /* maintains aspect ratio */
+      max-width: 100%;
+      max-height: 100%; /* Limit image height to prevent overflow */
+      height: auto; /* Maintain aspect ratio */
+      object-fit: contain; /* Ensure the image is contained within the bounding box without distortion */
     }
 
     /* Responsive adjustments for mobile screens */
@@ -106,7 +109,7 @@
     <div class="container">
       <div class="heading_container heading_center">
         <h2 style="color: white;">
-         <span> Our Services</span>
+         <span> Our stuff Services</span>
         </h2>
         <p>
           
