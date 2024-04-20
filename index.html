@@ -5,10 +5,10 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="Personal website of Ryan Brennan, showcasing projects, skills, and professional background in Computer Science." />
-  <meta name="author" content="Ryan Brennan" />
-  <link rel="shortcut icon" href="images/favicon.png" type="image/png">
-  <title>Ryan Brennan - Portfolio</title>
+  <meta name="keywords" content="Parking, Penn State, Plate Recognition, Capstone Project" />
+  <meta name="description" content="Penn State Plates capstone project for parking management using machine learning for plate scanning and API integration for database management." />
+  <meta name="author" content="Capstone Project Team" />
+  <title>Ryan Brennan</title>
 
   <!-- CSS Links -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -16,104 +16,344 @@
   <link href="css/font-awesome.min.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+<style>
+  /* Existing styles */
+  .service_section .img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .service_section .img-box img {
+    max-width: 100%;  /* Responsive image scaling */
+    height: auto;  /* Maintain image aspect ratio */
+  }
+  /* New mobile-specific styles */
+  @media (max-width: 768px) { /* Adjust the breakpoint as needed */
+    .service_section {
+      background-color: white !important;
+    }
+  }
+</style>
+
+  </style>
 </head>
+
 <body>
+
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="images/hero-bg.png" alt="">
+      </div>
+    </div>
+
+    <!-- Header section strats -->
+      <body>
+
   <div class="hero_area">
     <!-- Header Section -->
-    <header class="header_section">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container">
-          <span class="navbar-brand" style="text-transform: none; color: white;">
-            Ryan Brennan
-          </span>
-        </nav>
-      </div>
-    </header>
+ <header class="header_section">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg custom_nav-container">
+      <!-- Apply the style directly to make the text white -->
+      <span class="navbar-brand" style="text-transform: none; color: white;">
+        Parking Simplified
+      </span>
+    </nav>
+  </div>
+</header>
+    <!-- End Header Section -->
+    
 
-    <!-- Hero Section - Single Page without Carousel -->
-    <section class="slider_section" style="background-color: #f8f9fa;">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
+  <!-- Hero Section - Single Page without Carousel -->
+<section class="slider_section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="detail-box">
+          <h1>
+            Ryan Brennan <br>
+            Portfolio
+          </h1>
+          <p>
+            Computer Science student at Penn State, skilled in machine learning, software development, and data analysis. Exploring technology's potential through innovation and collaboration.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="img-box">
+          <img src="images/slider-img.png" alt="PSU Plates">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </div>
+
+
+
+<!-- Service Section -->
+<section class="service_section layout_padding" style="padding-top: 50px;">
+  <div class="service_container">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2 style="color: white;">
+         <span> Our Services</span>
+        </h2>
+        <p>
+          
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="box"> 
+            <!-- Inline styles added here for centering the image -->
+            <div class="img-box" style="display: flex; justify-content: center; align-items: center;">
+              <img src="images/s5.png" alt="" style="max-width: 100%; height: auto;">
+            </div>
             <div class="detail-box">
-              <h1>
-                Ryan Brennan
-              </h1>
+              <h5>
+                Green Parking
+              </h5>
               <p>
-                Computer Science student at Penn State, skilled in machine learning, software development, and data analysis. Exploring technology's potential through innovation and collaboration.
+                Without the constant need for new parking passes every semester, Penn State will have less plastic waste overall.
               </p>
+              <a href="">
+             
+              </a>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="img-box">
-              <img src="images/slider-img.png" alt="Ryan Brennan">
+        </div>
+        <div class="col-md-4">
+          <div class="box">
+            <!-- Inline styles added here for centering the image -->
+            <div class="img-box" style="display: flex; justify-content: center; align-items: center;">
+              <img src="images/s2.png" alt="" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Database Integration
+              </h5>
+              <p>
+                Our system integrates seamlessly with existing parking databases, allowing for real-time updates and management.
+              </p>
+              <a href="">
+              
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box">
+            <!-- Inline styles added here for centering the image -->
+            <div class="img-box" style="display: flex; justify-content: center; align-items: center;">
+              <img src="images/s3.png" alt="" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Machine Learning
+              </h5>
+              <p>
+                Utilizing machine learning algorithms, our plate scanning service provides quick and accurate vehicle identification.
+              </p>
+              <a href="">
+           
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   </div>
+</section>
+<!-- End Service Section -->
 
-  <!-- Skills Section -->
-  <section class="layout_padding" style="background-color: #ffffff;">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>Skills &amp; Interests</h2>
-      </div>
-      <p>Programming in Java, C++, Python | Frameworks: Django, SpringBoot | Tools: GitHub, MS SQL Server | Soft Skills: Teamwork, Leadership</p>
-    </div>
-  </section>
 
-  <!-- Experience Section -->
-  <section class="layout_padding" style="background-color: #f8f9fa;">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>Experience</h2>
-      </div>
-      <p>Machine Learning Intern at the Department of Homeland Security from May to August 2023. Utilized machine learning autoencoders for latent space representation on CT X-ray data, improving accuracy and efficiency of feature extraction from CT images.</p>
-    </div>
-  </section>
 
-  <!-- Coursework Section -->
-  <section class="layout_padding" style="background-color: #ffffff;">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>Coursework</h2>
-      </div>
-      <p>Relevant Courses: Data Structures, Algorithms, Probability and Statistics, Matrices, Object-Oriented Programming with Web-Based Applications, Software Engineering and Design, Databases, Machine Learning, Graph Theory</p>
+<!-- Skills section -->
+<section class="about_section layout_padding">
+  <div class="container">
+    <div class="heading_container heading_center">
+      <h2>
+       <span>About Me</span>
+      </h2>
+      <p>
+        As a Computer Science student at Penn State, I am dedicated to leveraging technology to enhance campus operations and personal efficiency.
+      </p>
     </div>
-  </section>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="detail-box">
+          <h3 style="text-align: center; font-size: 1.2em;">
+            Skills & Interests
+          </h3>
+          <ul>
+            <li>Programming Languages: Java, C++, Python</li>
+            <li>Frameworks: Django, SpringBoot</li>
+            <li>Tools: GitHub, MS SQL Server, Visual Studio, Jupyter Notebook, Anaconda</li>
+            <li>Soft Skills: Teamwork, Leadership, Communication, Adaptability, Critical Thinking</li>
+            <li>Interests: Machine Learning, Data Structures, Algorithms, Web Development</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="detail-box">
+          <h3 style="text-align: center; font-size: 1.2em;">
+            Goals
+          </h3>
+          <p style="text-align: center;">
+            Our goal is to improve the way our campus operates through innovative solutions. By focusing on technology-driven enhancements, we strive to make campus life more efficient for students, faculty, and staff.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end about section -->
 
-  <!-- Social Links Section -->
-  <section class="layout_padding" style="background-color: #f8f9fa;">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>Connect with Me</h2>
-      </div>
-      <div class="social_box" style="text-align: center;">
-        <a href="https://www.linkedin.com/in/RyanBrennan143/">
-          <i class="fa fa-linkedin" aria-hidden="true"></i>
-        </a>
+
+<!-- team section -->
+<section class="team_section layout_padding" style="background-color: white;">
+  <div class="container-fluid">
+    <div class="heading_container heading_center">
+      <h2><span>Our Team</span></h2>
+    </div>
+    <div class="team_container">
+      <div class="row justify-content-center">
+        <div class="col-lg-2 col-sm-6">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/Ryan.jpg" class="img1" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>Ryan Brennan</h5>
+            </div>
+            <div class="social_box" style="text-align: center;">
+              <a href="https://www.linkedin.com/in/ryanbrennan143/">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="https://github.com/ZeroTolerance225">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </div>            
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-6">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/alan.jpg" class="img1" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>Alan Baxley</h5>
+            </div>
+            <div class="social_box" style="text-align: center;">
+              <a href="https://www.linkedin.com/in/alan-baxley-00134424b/">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="https://github.com/ajbax-cmd">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-6">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/brendan.jpg" class="img1" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>Brendan Gaffney</h5>
+            </div>
+            <div class="social_box" style="text-align: center;">
+              <a href="https://www.linkedin.com/in/brendan-gaffney-a17776198/">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="https://github.com/bmg5861">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        
+     <div class="col-lg-2 col-sm-6">
+    <div class="box">
+        <div class="img-box">
+            <img src="images/tyler3.png" class="img1" alt="">
+        </div>
+        <div class="detail-box">
+            <h5>Tyler Wallace</h5>
+        </div>
+        <div class="social_box" style="display: flex; justify-content: center; align-items: center;">
+            <a href="https://github.com/Seeleysbay">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+        <div class="col-lg-2 col-sm-6">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/jeff4.png" class="img1" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>Jeffrey Tetkoskie</h5>
+            </div>
+            <div class="social_box" style="text-align: center;">
+              <a href="https://www.linkedin.com/in/jeffrey-tetkoskie-56801115a/">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="https://github.com/JeffreyTet">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+<!-- end team section -->
+
+
+
+
+
 
   <!-- footer section -->
-  <section class="footer_section" style="background-color: #ffffff;">
+  <section class="footer_section">
     <div class="container">
       <p>
         &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://www.linkedin.com/in/RyanBrennan143/">Ryan Brennan</a>
+        <a href="https://html.design/">Penn State Plates</a>
       </p>
     </div>
   </section>
-
-  <!-- Scripts -->
+  <!-- footer section -->
+        
+  <!-- jQery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script type="text/javascript" src="js/custom.js"></script>
-  <script>
-    document.getElementById('displayYear').textContent = new Date().getFullYear();
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
   </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
 </body>
+
 </html>
