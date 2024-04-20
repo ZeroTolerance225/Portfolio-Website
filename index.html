@@ -35,38 +35,12 @@
       background-color: white !important;
     }
   }
-
-    body.dark-mode {
-  background-color: #333;
-  color: #ddd;
-}
-
-.dark-mode .navbar, .dark-mode footer {
-  background-color: #222;
-}
-
-.dark-mode .detail-box, .dark-mode .box {
-  background-color: #444;
-  color: #fff;
-}
-
-.dark-mode img {
-  filter: brightness(0.8);
-}
-
-/* Ensure that text colors are adjusted too */
-.dark-mode p, .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h5 {
-  color: #ccc;
-}
-
 </style>
 
   </style>
 </head>
 
 <body>
-  <!-- Dark Mode Toggle Button -->
-  <button id="darkModeToggle" style="position: fixed; top: 20px; right: 20px; z-index: 1000;">Toggle Dark Mode</button>
 
   <div class="hero_area">
 
@@ -214,10 +188,10 @@
     </div>
   </div>
 </section>
-<!-- end about section -->
+<!-- end personal section -->
 
 
-<!-- Personal section -->
+<!-- team section -->
 <section class="team_section layout_padding" style="background-color: white;">
   <div class="container-fluid">
     <div class="heading_container heading_center">
@@ -279,14 +253,6 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
   <!-- End Google Map -->
-        <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script>
-    document.getElementById('darkModeToggle').addEventListener('click', function() {
-      document.body.classList.toggle('dark-mode');
-      this.textContent = document.body.classList.contains('dark-mode') ? 'Switch to Light Mode' : 'Toggle Dark Mode';
-    });
-  </script>
 
 </body>
 
