@@ -16,10 +16,35 @@
   <link href="css/font-awesome.min.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/responsive.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
   <style>
 <style>
-  /* Existing styles */
+  .button-49, .button-49:after {
+    width: 150px;
+    height: 76px;
+    line-height: 78px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    box-shadow: 6px 0px 0px #00E6F6;
+    outline: transparent;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: box-shadow 0.3s, transform 0.2s; /* Add smooth transition */
+}
+
+/* Optional hover effect for a more interactive look */
+.button-49:hover {
+    box-shadow: 8px 4px 0px #00E6F6;
+    transform: translateY(-3px);
+}
+
   .service_section .img-box {
     display: flex;
     justify-content: center;
@@ -83,7 +108,7 @@
             I am a Computer Science major and Mathematics minor at Penn State, skilled in machine learning, software development, and data analysis. I am dedicated to exploring technology's potential through innovation and collaboration while articulating complex tech concepts clearly to diverse audiences.
           </p>
           <!-- Resume Button -->
-          <a href="Ryan Brennan Resume.pdf" class="btn btn-primary" download>
+          <a href="Ryan Brennan Resume.pdf" class="button-49" download>
             Download My Resume
           </a>
         </div>
@@ -352,6 +377,7 @@
   <script type="text/javascript" src="js/custom.js"></script>
   <!-- Google Map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+    
   </script>
   <!-- End Google Map -->
 
