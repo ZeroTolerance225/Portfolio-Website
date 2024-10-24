@@ -18,10 +18,10 @@
   <link href="css/responsive.css" rel="stylesheet" />
 
   <!-- Tippy.js CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" /> <!-- Base CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" />
   <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
 
-  <!-- Custom CSS for Download Button -->
+  <!-- Custom Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
   <style>
@@ -65,9 +65,10 @@
       border-radius: 12px;
     }
 
+    /* Button 49 Styles */
     .button-49, .button-49:after {
-      width: 250px;  /* Larger width */
-      height: 120px;  /* Larger height */
+      width: 250px;
+      height: 120px;
       line-height: 120px;
       font-size: 28px;
       font-family: 'Bebas Neue', sans-serif;
@@ -91,7 +92,34 @@
       animation: glitch 0.5s infinite;
     }
 
-    /* Adjusted glitch keyframes */
+    /* New custom button style */
+    .button-custom, .button-custom:after {
+      width: 200px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 20px;
+      font-family: 'Bebas Neue', sans-serif;
+      background: linear-gradient(45deg, transparent 5%, black 5%);
+      border: 0;
+      color: #00E6F6; /* Light blue text color */
+      letter-spacing: 3px;
+      box-shadow: 6px 0px 0px #00E6F6; /* Light blue shadow */
+      outline: transparent;
+      position: relative;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      transition: box-shadow 0.3s, transform 0.2s;
+    }
+
+    /* Hover effect for custom buttons */
+    .button-custom:hover {
+      box-shadow: 8px 4px 0px #00E6F6;
+      transform: translateY(-3px) rotate(-1deg);
+      animation: glitch 0.5s infinite;
+    }
+
+    /* Glitch Keyframes */
     @keyframes glitch {
       0%, 100% {
         /* No transform to avoid conflict with Tippy.js */
@@ -183,122 +211,118 @@
       </div>
     </section>
 
- 
-<!-- Projects Section -->
-<section class="about_section layout_padding">
-  <div class="container">
-    <div class="heading_container heading_center">
-      <h2>
-        <span>Projects</span>
-      </h2>
-    </div>
-  <!-- Project 1: Binary Classification -->
-    <div class="row">
-      <div class="col-md-12">
-        <div class="box">
-          <div class="detail-box">
-            <h4>Binary Classification Model Development</h4>
-            <ul>
-              <li>Created binary classification models for detecting chemical analytes, optimizing data efficiency</li>
-              <li>Evaluated models like Random Forest and CNNs to determine the most accurate approach</li>
-            </ul>
-            <!-- Red Warning Message -->
-             <div style="color: red; font-weight: bold; text-align: center;">
-              Warning: This code is not available for security reasons, as it was created during an internship with DHS.
+    <!-- Projects Section -->
+    <section class="about_section layout_padding">
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2><span>Projects</span></h2>
+        </div>
+
+        <!-- Project 1: Binary Classification Model Development -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="box">
+              <div class="detail-box">
+                <h4>Binary Classification Model Development</h4>
+                <ul>
+                  <li>Created binary classification models for detecting chemical analytes, optimizing data efficiency</li>
+                  <li>Evaluated models like Random Forest and CNNs to determine the most accurate approach</li>
+                </ul>
+                <!-- Red Warning Message -->
+                <div style="color: red; font-weight: bold; text-align: center;">
+                  Warning: This code is not available for security reasons, as it was created during an internship with DHS.
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    
-    <!-- Project 2: Three-Dimensional Autoencoder -->
-    <div class="row">
-      <div class="col-md-12">
-        <div class="box">
-          <div class="detail-box">
-            <h4>Three-Dimensional Autoencoder</h4>
-            <ul>
-              <li>Converted CT x-ray luggage scans into a TFRecords dataset</li>
-              <li>Developed 3D autoencoder for data compression and reconstruction</li>
-            </ul>
-            <!-- Red Warning Message -->
-             <div style="color: red; font-weight: bold; text-align: center;">
-              Warning: This code is not available for security reasons, as it was created during an internship with DHS.
+
+        <!-- Project 2: Three-Dimensional Autoencoder -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="box">
+              <div class="detail-box">
+                <h4>Three-Dimensional Autoencoder</h4>
+                <ul>
+                  <li>Converted CT x-ray luggage scans into a TFRecords dataset</li>
+                  <li>Developed 3D autoencoder for data compression and reconstruction</li>
+                </ul>
+                <!-- Red Warning Message -->
+                <div style="color: red; font-weight: bold; text-align: center;">
+                  Warning: This code is not available for security reasons, as it was created during an internship with DHS.
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Project 3: Capstone Project: Parking Permit System -->
-    <div class="row">
-      <div class="col-md-12">
-        <div class="box">
-          <div class="detail-box">
-            <h4>Capstone Project: Parking Permit System</h4>
-            <ul>
-              <li>Developed an Android app for license plate detection using YOLO and Google ML Kit</li>
-              <li>Integrated real-time database management via an API</li>
-              <li>Created a web interface for administrative CRUD operations</li>
-            </ul>
-            <!-- Centered and Rounded GitHub Button -->
-            <div class="text-center">
-              <a href="https://github.com/ZeroTolerance225/Capstone-License-Plate-Reader.git" class="btn btn-dark btn-rounded" target="_blank">
-                View on GitHub <i class="fa fa-github" aria-hidden="true"></i>
-              </a>
+        <!-- Project 3: Capstone Project: Parking Permit System -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="box">
+              <div class="detail-box">
+                <h4>Capstone Project: Parking Permit System</h4>
+                <ul>
+                  <li>Developed an Android app for license plate detection using YOLO and Google ML Kit</li>
+                  <li>Integrated real-time database management via an API</li>
+                  <li>Created a web interface for administrative CRUD operations</li>
+                </ul>
+                <!-- Updated GitHub Button -->
+                <div class="text-center">
+                  <a href="https://github.com/ZeroTolerance225/Capstone-License-Plate-Reader.git" class="button-custom" target="_blank">
+                    <span>View on GitHub <i class="fa fa-github" aria-hidden="true"></i></span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Project 4: Facial Similarity/Recognition System -->
-    <div class="row">
-      <div class="col-md-12">
-        <div class="box">
-          <div class="detail-box">
-            <h4>Facial Similarity/Recognition System</h4>
-            <ul>
-              <li>Designed a system for face detection using YOLO and feature extraction with ResNet</li>
-              <li>Integrated FAISS for managing and searching facial feature vectors</li>
-            </ul>
-            <!-- Centered and Rounded GitHub Button -->
-            <div class="text-center">
-              <a href="https://github.com/ZeroTolerance225/Facial-Recognition-Similarity.git" class="btn btn-dark btn-rounded" target="_blank">
-                View on GitHub <i class="fa fa-github" aria-hidden="true"></i>
-              </a>
+        <!-- Project 4: Facial Similarity/Recognition System -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="box">
+              <div class="detail-box">
+                <h4>Facial Similarity/Recognition System</h4>
+                <ul>
+                  <li>Designed a system for face detection using YOLO and feature extraction with ResNet</li>
+                  <li>Integrated FAISS for managing and searching facial feature vectors</li>
+                </ul>
+                <!-- Updated GitHub Button -->
+                <div class="text-center">
+                  <a href="https://github.com/ZeroTolerance225/Facial-Recognition-Similarity.git" class="button-custom" target="_blank">
+                    <span>View on GitHub <i class="fa fa-github" aria-hidden="true"></i></span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Project 5: Spring Boot Web App Bookstore -->
-    <div class="row">
-      <div class="col-md-12">
-        <div class="box">
-          <div class="detail-box">
-            <h4>Spring Boot Web App Bookstore</h4>
-            <ul>
-              <li>Built an online bookstore web application with Spring Boot MVC</li>
-              <li>Managed data with Spring Data JPA</li>
-              <li>Implemented user authentication through Spring Security</li>
-            </ul>
-            <!-- Centered and Rounded GitHub Button -->
-            <div class="text-center">
-              <a href="https://github.com/ZeroTolerance225/BookStore-SpringBoot.git" class="btn btn-dark btn-rounded" target="_blank">
-                View on GitHub <i class="fa fa-github" aria-hidden="true"></i>
-              </a>
+        <!-- Project 5: Spring Boot Web App Bookstore -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="box">
+              <div class="detail-box">
+                <h4>Spring Boot Web App Bookstore</h4>
+                <ul>
+                  <li>Built an online bookstore web application with Spring Boot MVC</li>
+                  <li>Managed data with Spring Data JPA</li>
+                  <li>Implemented user authentication through Spring Security</li>
+                </ul>
+                <!-- Updated GitHub Button -->
+                <div class="text-center">
+                  <a href="https://github.com/ZeroTolerance225/BookStore-SpringBoot.git" class="button-custom" target="_blank">
+                    <span>View on GitHub <i class="fa fa-github" aria-hidden="true"></i></span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
-    </div>
-  </div>
-</section>
-
-
-
+    </section>
 
     <!-- Skills and Personal Links Section -->
     <section class="about_section layout_padding" style="background-color: white;">
@@ -324,13 +348,19 @@
             </div>
             <h5>Ryan Brennan</h5>
             <div class="social_box">
-              <a href="https://www.linkedin.com/in/ryanbrennan143/" class="btn btn-primary">LinkedIn</a>
-              <a href="https://github.com/ZeroTolerance225" class="btn btn-dark">GitHub</a>
+              <!-- Updated Social Buttons -->
+              <a href="https://www.linkedin.com/in/ryanbrennan143/" class="button-custom">
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://github.com/ZeroTolerance225" class="button-custom">
+                <span>GitHub</span>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
+
   </div>
 
   <!-- Footer Section -->
@@ -343,7 +373,6 @@
   <!-- JS Links -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
-  <!-- Remove Popper.js inclusion -->
   <!-- Include Tippy.js Bundle (includes Popper.js) -->
   <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.min.js"></script>
 
@@ -351,6 +380,12 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       tippy('.button-49 span', {
+        animation: 'scale',
+        duration: 300,
+      });
+
+      // Initialize tooltips for custom buttons if needed
+      tippy('.button-custom span', {
         animation: 'scale',
         duration: 300,
       });
