@@ -21,6 +21,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
   <style>
+    
+        @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-30px);
+      }
+      60% {
+        transform: translateY(-15px);
+      }
+    }
+    
+    .bounce-animation {
+      animation: bounce 2s infinite;
+    }
+
     .service_section .img-box {
       display: flex;
       justify-content: center;
@@ -345,7 +362,8 @@
       </div>
       <div class="col-md-6 text-center">
         <div class="img-box">
-          <img src="images/RyanCapstone.jpg" alt="Ryan Brennan" style="width: 250px; border-radius: 15px;">
+          <img src="images/RyanCapstone.jpg" alt="Ryan Brennan" class="bounce-animation" style="width: 250px; border-radius: 15px;">
+
         </div>
         <h5>Ryan Brennan</h5>
         <p>
