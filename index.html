@@ -17,15 +17,10 @@
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/responsive.css" rel="stylesheet" />
 
-  <!-- Tippy.js CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" />
-  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
-
-  <!-- Custom Fonts -->
+  <!-- Custom CSS for Download Button -->
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
   <style>
-    /* Existing styles */
     .service_section .img-box {
       display: flex;
       justify-content: center;
@@ -65,12 +60,10 @@
       border-radius: 12px;
     }
 
-    /* Button 49 Styles */
-    .button-49, .button-49:after {
-      width: 250px;
-      height: 120px;
-      line-height: 120px;
-      font-size: 28px;
+    .button-layered, .button-layered:after {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 18px;
       font-family: 'Bebas Neue', sans-serif;
       background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
       border: 0;
@@ -83,61 +76,17 @@
       -webkit-user-select: none;
       touch-action: manipulation;
       transition: box-shadow 0.3s, transform 0.2s;
+      text-decoration: none;
+      text-align: center;
     }
 
-    /* Adjusted hover effect */
-    .button-49:hover {
+    /* Hover effect for a more interactive look */
+    .button-layered:hover {
       box-shadow: 10px 5px 0px #00E6F6;
-      transform: translateY(-4px) rotate(-1deg);
-      animation: glitch 0.5s infinite;
-    }
-
-    /* New custom button style */
-    .button-custom, .button-custom:after {
-      width: 200px;
-      height: 60px;
-      line-height: 60px;
-      font-size: 20px;
-      font-family: 'Bebas Neue', sans-serif;
-      background: linear-gradient(45deg, transparent 5%, black 5%);
-      border: 0;
-      color: #00E6F6; /* Light blue text color */
-      letter-spacing: 3px;
-      box-shadow: 6px 0px 0px #00E6F6; /* Light blue shadow */
-      outline: transparent;
-      position: relative;
-      user-select: none;
-      -webkit-user-select: none;
-      touch-action: manipulation;
-      transition: box-shadow 0.3s, transform 0.2s;
-    }
-
-    /* Hover effect for custom buttons */
-    .button-custom:hover {
-      box-shadow: 8px 4px 0px #00E6F6;
-      transform: translateY(-3px) rotate(-1deg);
-      animation: glitch 0.5s infinite;
-    }
-
-    /* Glitch Keyframes */
-    @keyframes glitch {
-      0%, 100% {
-        /* No transform to avoid conflict with Tippy.js */
-      }
-      20% {
-        transform: translate(-2px, -2px) skew(-2deg);
-      }
-      40% {
-        transform: translate(2px, 2px) skew(2deg);
-      }
-      60% {
-        transform: translate(-2px, 2px) skew(-1deg);
-      }
-      80% {
-        transform: translate(2px, -2px) skew(1deg);
-      }
+      transform: translateY(-4px);
     }
   </style>
+
 </head>
 
 <body>
@@ -159,9 +108,9 @@
               <p style="font-size: 16px; color: white;">
                 I am a Computer Science major and Mathematics minor at Penn State, skilled in machine learning, software development, and data analysis. I am dedicated to exploring technology's potential through innovation and collaboration while articulating complex tech concepts clearly to diverse audiences.
               </p>
-              <!-- Updated Resume Button with Tooltip on Span -->
-              <a href="Ryan Brennan Resume.pdf" class="button-49" download>
-                <span data-tippy-content="Download Resume">Download My Resume</span>
+              <!-- Updated Resume Button -->
+              <a href="Ryan Brennan Resume.pdf" class="button-layered" download>
+                Download My Resume
               </a>
             </div>
           </div>
@@ -215,10 +164,11 @@
     <section class="about_section layout_padding">
       <div class="container">
         <div class="heading_container heading_center">
-          <h2><span>Projects</span></h2>
+          <h2>
+            <span>Projects</span>
+          </h2>
         </div>
-
-        <!-- Project 1: Binary Classification Model Development -->
+        <!-- Project 1: Binary Classification -->
         <div class="row">
           <div class="col-md-12">
             <div class="box">
@@ -267,10 +217,10 @@
                   <li>Integrated real-time database management via an API</li>
                   <li>Created a web interface for administrative CRUD operations</li>
                 </ul>
-                <!-- Updated GitHub Button -->
+                <!-- Centered GitHub Button -->
                 <div class="text-center">
-                  <a href="https://github.com/ZeroTolerance225/Capstone-License-Plate-Reader.git" class="button-custom" target="_blank">
-                    <span>View on GitHub <i class="fa fa-github" aria-hidden="true"></i></span>
+                  <a href="https://github.com/ZeroTolerance225/Capstone-License-Plate-Reader.git" class="button-layered" target="_blank">
+                    View on GitHub <i class="fa fa-github" aria-hidden="true"></i>
                   </a>
                 </div>
               </div>
@@ -288,10 +238,10 @@
                   <li>Designed a system for face detection using YOLO and feature extraction with ResNet</li>
                   <li>Integrated FAISS for managing and searching facial feature vectors</li>
                 </ul>
-                <!-- Updated GitHub Button -->
+                <!-- Centered GitHub Button -->
                 <div class="text-center">
-                  <a href="https://github.com/ZeroTolerance225/Facial-Recognition-Similarity.git" class="button-custom" target="_blank">
-                    <span>View on GitHub <i class="fa fa-github" aria-hidden="true"></i></span>
+                  <a href="https://github.com/ZeroTolerance225/Facial-Recognition-Similarity.git" class="button-layered" target="_blank">
+                    View on GitHub <i class="fa fa-github" aria-hidden="true"></i>
                   </a>
                 </div>
               </div>
@@ -310,17 +260,16 @@
                   <li>Managed data with Spring Data JPA</li>
                   <li>Implemented user authentication through Spring Security</li>
                 </ul>
-                <!-- Updated GitHub Button -->
+                <!-- Centered GitHub Button -->
                 <div class="text-center">
-                  <a href="https://github.com/ZeroTolerance225/BookStore-SpringBoot.git" class="button-custom" target="_blank">
-                    <span>View on GitHub <i class="fa fa-github" aria-hidden="true"></i></span>
+                  <a href="https://github.com/ZeroTolerance225/BookStore-SpringBoot.git" class="button-layered" target="_blank">
+                    View on GitHub <i class="fa fa-github" aria-hidden="true"></i>
                   </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -348,19 +297,13 @@
             </div>
             <h5>Ryan Brennan</h5>
             <div class="social_box">
-              <!-- Updated Social Buttons -->
-              <a href="https://www.linkedin.com/in/ryanbrennan143/" class="button-custom">
-                <span>LinkedIn</span>
-              </a>
-              <a href="https://github.com/ZeroTolerance225" class="button-custom">
-                <span>GitHub</span>
-              </a>
+              <a href="https://www.linkedin.com/in/ryanbrennan143/" class="button-layered">LinkedIn</a>
+              <a href="https://github.com/ZeroTolerance225" class="button-layered">GitHub</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-
   </div>
 
   <!-- Footer Section -->
@@ -373,24 +316,5 @@
   <!-- JS Links -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
-  <!-- Include Tippy.js Bundle (includes Popper.js) -->
-  <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.min.js"></script>
-
-  <!-- Initialize Tippy.js -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      tippy('.button-49 span', {
-        animation: 'scale',
-        duration: 300,
-      });
-
-      // Initialize tooltips for custom buttons if needed
-      tippy('.button-custom span', {
-        animation: 'scale',
-        duration: 300,
-      });
-    });
-  </script>
-
 </body>
 </html>
