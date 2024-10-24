@@ -129,6 +129,30 @@
   transform: translateY(-4px);
   color: #00E6F6; 
 }
+    .about_section .img-box {
+  margin: 10px 0; /* Reduce the top and bottom margin of the image */
+  padding: 0; /* Ensure there’s no padding around the image */
+}
+
+.about_section .social_box {
+  margin-top: 10px; /* Bring the social buttons closer to the image */
+}
+
+.about_section .detail-box {
+  margin-bottom: 10px; /* Tighten the layout */
+}
+
+@media (max-width: 768px) {
+  .about_section .row {
+    flex-direction: column;
+    align-items: center; /* Center the content on smaller screens */
+  }
+
+  .img-box {
+    margin-bottom: 15px; /* Maintain small space on smaller screens */
+  }
+}
+
 
   </style>
 
@@ -353,23 +377,20 @@
         <div class="detail-box">
           <ul>
             <li><strong>Programming Languages & Frameworks:</strong> C#, Java, C++, Python, Django, SpringBoot, TensorFlow, NumPy</li>
-            <li><strong>Technical Skills:</strong> Model-View-Controller (MVC), SQL, Assembly Language (MIPS), Machine Learning, Data Analysis</li>
-            <li><strong>Tools:</strong> Microsoft Office, Google Workspace, GitHub, Visual Studio, MS SQL Server, Jupyter Notebook, Anaconda</li>
-            <li><strong>Soft Skills:</strong> Teamwork, Leadership, Communication, Adaptability, Critical Thinking, Sales</li>
-            <li><strong>Interests:</strong> Machine Learning, Software Development, Artificial Intelligence, Data Sciences</li>
+            <li><strong>Technical Skills:</strong> MVC, SQL, MIPS, Machine Learning, Data Analysis</li>
+            <li><strong>Tools:</strong> MS Office, GitHub, Visual Studio, Jupyter Notebook</li>
+            <li><strong>Soft Skills:</strong> Teamwork, Leadership, Communication, Critical Thinking</li>
+            <li><strong>Interests:</strong> Machine Learning, AI, Software Development</li>
           </ul>
         </div>
       </div>
       <div class="col-md-6 text-center">
         <div class="img-box">
-          <img src="images/RyanCapstone.jpg" alt="Ryan Brennan" class="bounce-animation" style="width: 250px; border-radius: 0px;">
-
+          <img src="images/RyanCapstone.jpg" alt="Ryan Brennan" 
+               style="width: 250px; border-radius: 15px;">
         </div>
         <h5>Ryan Brennan</h5>
-        <p>
-          Location: PA, USA<br>
-          Phone: (717) 919-6106
-        </p>
+        <p>Location: PA, USA<br>Phone: (717) 919-6106</p>
         <div class="social_box">
           <a href="mailto:RyanBrennan225@gmail.com" class="button-layered-dark" target="_blank">Email Me</a>
           <a href="https://www.linkedin.com/in/ryanbrennan143/" class="button-layered-dark" target="_blank">LinkedIn</a>
@@ -379,6 +400,7 @@
     </div>
   </div>
 </section>
+
 
 
   <!-- Footer Section -->
