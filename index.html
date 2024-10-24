@@ -16,15 +16,16 @@
   <link href="css/font-awesome.min.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/responsive.css" rel="stylesheet" />
-  
+
   <!-- Tippy.js CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" /> <!-- Added -->
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" /> <!-- Base CSS -->
   <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
 
   <!-- Custom CSS for Download Button -->
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
   <style>
+    /* Existing styles */
     .service_section .img-box {
       display: flex;
       justify-content: center;
@@ -83,17 +84,17 @@
       transition: box-shadow 0.3s, transform 0.2s;
     }
 
-    /* Glitchy Effect - Shake on Hover */
+    /* Adjusted hover effect */
     .button-49:hover {
       box-shadow: 10px 5px 0px #00E6F6;
-      transform: translateY(-4px) rotate(-1deg);  /* Adds slight rotation */
-      animation: glitch 0.5s infinite;  /* Glitch animation */
+      transform: translateY(-4px) rotate(-1deg);
+      animation: glitch 0.5s infinite;
     }
 
-    /* Glitch Keyframes */
+    /* Adjusted glitch keyframes */
     @keyframes glitch {
       0%, 100% {
-        transform: translate(0px, 0px);
+        /* No transform to avoid conflict with Tippy.js */
       }
       20% {
         transform: translate(-2px, -2px) skew(-2deg);
@@ -130,9 +131,9 @@
               <p style="font-size: 16px; color: white;">
                 I am a Computer Science major and Mathematics minor at Penn State, skilled in machine learning, software development, and data analysis. I am dedicated to exploring technology's potential through innovation and collaboration while articulating complex tech concepts clearly to diverse audiences.
               </p>
-              <!-- Updated Resume Button -->
-              <a href="Ryan Brennan Resume.pdf" class="button-49" download data-tippy-content="Download Resume">
-                Download My Resume
+              <!-- Updated Resume Button with Tooltip on Span -->
+              <a href="Ryan Brennan Resume.pdf" class="button-49" download>
+                <span data-tippy-content="Download Resume">Download My Resume</span>
               </a>
             </div>
           </div>
@@ -331,7 +332,8 @@
       </div>
     </section>
   </div>
-<!-- Footer Section -->
+
+  <!-- Footer Section -->
   <section class="footer_section">
     <div class="container">
       <p>&copy; 2024 Ryan Brennan. All Rights Reserved.</p>
@@ -341,17 +343,16 @@
   <!-- JS Links -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
-  <!-- Popper.js -->
-  <script src="https://unpkg.com/@popperjs/core@2"></script>
-  <!-- Tippy.js -->
-  <script src="https://unpkg.com/tippy.js@6"></script>
-  
+  <!-- Remove Popper.js inclusion -->
+  <!-- Include Tippy.js Bundle (includes Popper.js) -->
+  <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.min.js"></script>
+
   <!-- Initialize Tippy.js -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      tippy('.button-49', {
-        animation: 'scale',  // Smooth scaling effect on hover
-        duration: 300,       // Duration of the animation
+      tippy('.button-49 span', {
+        animation: 'scale',
+        duration: 300,
       });
     });
   </script>
