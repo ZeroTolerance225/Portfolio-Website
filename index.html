@@ -131,9 +131,10 @@
                 I am a Computer Science major and Mathematics minor at Penn State, skilled in machine learning, software development, and data analysis. I am dedicated to exploring technology's potential through innovation and collaboration while articulating complex tech concepts clearly to diverse audiences.
               </p>
               <!-- Updated Resume Button -->
-              <a href="Ryan Brennan Resume.pdf" class="button-49" download>
+              <a href="Ryan Brennan Resume.pdf" class="button-49" download data-tippy-content="Download Resume">
                 Download My Resume
               </a>
+
             </div>
           </div>
           <div class="col-md-6">
@@ -344,5 +345,12 @@
   <script src="js/bootstrap.js"></script>
   <script src="https://unpkg.com/@popperjs/core@2"></script>
   <script src="https://unpkg.com/tippy.js@6"></script>
+  <script>
+  tippy('.button-49', {
+    animation: 'scale',  // Smooth scaling effect on hover
+    duration: 300,       // Duration of the animation
+  });
+</script>
+
 </body>
 </html>
